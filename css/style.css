@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;500;700&display=swap");
+@font-face {
+  font-family: "Bazar-500";
+  /*a name to be used later*/
+  src: url(../font/Bazar-500.ttf);
+  /*URL to font*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Bazar-500", sans-serif;
+}
+
+* .fa,
+* .fas,
+* .far {
+  font-size: 30px !important;
+  padding: 10px;
+  color: #3333337d !important;
+}
+
+li {
+  text-decoration: none;
+}
+
+span {
+  font-family: "Roboto Slab", serif;
+}
+
+header nav .navbar-brand img {
+  position: absolute;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -15%);
+  transform: translate(-50%, -40%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+header .dashline img, section .dashline img {
+  max-width: 100%;
+}
+
+section .carousel .carousel-inner .carousel-item .photobooth .left-arrow, section .carousel .carousel-inner .carousel-item .photobooth .right-arrow {
+  background: white;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+}
+
+section.about-section .headlines ul li span, section.portfolio-section .headlines ul li span, section.my-blog .headlines ul li span, section.contact .headlines ul li span, section.about-section .container .row .card .card-body span, section.portfolio-section .browse span, section.my-blog .blog-content span, section.my-blog .post span, section.contact .social span {
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #333;
+  margin: auto;
+}
+
+section.about-section .headlines h1, section.portfolio-section .headlines h1, section.my-blog .headlines h1, section.contact .headlines h1 {
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px #ffffff, 4px 4px 0px #5e5e5e;
+}
+
+section.about-section .headlines ul, section.portfolio-section .headlines ul, section.my-blog .headlines ul, section.contact .headlines ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about-section .headlines ul li, section.portfolio-section .headlines ul li, section.my-blog .headlines ul li, section.contact .headlines ul li {
+  padding: 10px;
+}
+
+section.about-section .headlines ul li span, section.portfolio-section .headlines ul li span, section.my-blog .headlines ul li span, section.contact .headlines ul li span {
+  text-align: center;
+}
+
+section.about-section .headlines ul li p, section.portfolio-section .headlines ul li p, section.my-blog .headlines ul li p, section.contact .headlines ul li p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+section.about-section .headlines p, section.portfolio-section .headlines p, section.my-blog .headlines p, section.contact .headlines p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.about-section .container .row .card .rounded-icons {
+  position: relative;
+  display: block;
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+  background-color: #d45244;
+  margin: 2px;
+  border: 5px solid #d45244;
+  background-clip: content-box;
+  padding: 5px;
+  margin: auto;
+}
+
+section.about-section .container .row .card .rounded-icons .card-img-top {
+  width: 60%;
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  -webkit-transform: translate(35%, -20%);
+          transform: translate(35%, -20%);
+}
+
+header {
+  background: url(../images/background.png);
+  background-repeat: repeat;
+}
+
+header .shadow {
+  margin-bottom: 1px !important;
+  -webkit-box-shadow: 5px 10px #888 !important;
+          box-shadow: 5px 10px #888 !important;
+}
+
+header nav {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+header nav .navbar-nav {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav .nav-link {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #f9ebd9;
+}
+
+header nav .nav-link:hover, header nav .nav-link:focus {
+  color: #333;
+}
+
+header nav .navbar-brand img:hover {
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+}
+
+section {
+  background: url(../images/background.png);
+  background-repeat: repeat;
+}
+
+section .banner {
+  text-align: center;
+}
+
+section .ribbon {
+  width: 100%;
+  text-align: center;
+}
+
+section .carousel {
+  border-radius: 5px;
+}
+
+section .carousel .carousel-inner .carousel-item .photobooth {
+  position: relative;
+}
+
+section .carousel .carousel-inner .carousel-item .photobooth img {
+  width: 100%;
+  height: 80vh;
+  border: 20px solid #fbfaf6;
+  border-bottom-width: 40px;
+  border-radius: 5px;
+}
+
+section .carousel .carousel-inner .carousel-item .photobooth .left-arrow {
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+}
+
+section .carousel .carousel-inner .carousel-item .photobooth .right-arrow {
+  right: 0%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(30%, -50%);
+}
+
+section .carousel .carousel-inner .carousel-item .photobooth .carousel-caption h5 {
+  color: black !important;
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+  -webkit-transform: translate(50%, 65%);
+          transform: translate(50%, 65%);
+  text-transform: uppercase;
+}
+
+section .carousel .button {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+
+section .carousel .carousel-control-next,
+section .carousel .carousel-control-prev {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section .carousel .carousel-control-next,
+section .carousel .carousel-control-next {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section .welcome {
+  text-align: center;
+}
+
+section .welcome h1 {
+  color: #f7ebd8;
+}
+
+section.about-section {
+  background: url(../images/about-background.png);
+  background-repeat: repeat;
+}
+
+section.about-section .container .row .card {
+  margin: auto;
+  background: transparent;
+  border: none;
+}
+
+section.about-section .container .row .card .card-body h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.about-section .container .row .card .card-body h5 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  padding: 1rem;
+}
+
+section.about-section .container .row .card .card-body p {
+  font-family: "Roboto Slab", serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.8;
+  padding: 1rem;
+}
+
+section.about-section .container .row .card .card-body p strong {
+  font-weight: 600;
+  color: black;
+}
+
+section.portfolio-section {
+  background: url(../images/port-background.png);
+  background-repeat: repeat;
+}
+
+section.portfolio-section .container .tag {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.portfolio-section .container .tag span {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+}
+
+section.portfolio-section .container .tag .bubble {
+  -webkit-box-shadow: 2px 2px 0px #565656;
+          box-shadow: 2px 2px 0px #565656;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto Slab", serif;
+  margin: 0px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  background: white;
+  position: relative;
+  margin: 0px 10px;
+  border-radius: 0px;
+}
+
+section.portfolio-section .container .tag .bubble::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid white;
+  border-bottom: 20px solid transparent;
+}
+
+section.portfolio-section .container .tag .bubble:hover ::before {
+  content: "";
+  display: none;
+}
+
+section.portfolio-section .container .tag .bubble a {
+  text-decoration: none;
+  color: #333 !important;
+  font-family: "Roboto Slab", serif;
+}
+
+section.portfolio-section .galary .card {
+  position: relative;
+  border-radius: 10px;
+}
+
+section.portfolio-section .galary .card img {
+  width: 95%;
+  height: 25vh;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+section.portfolio-section .galary .card .frame {
+  position: absolute;
+  background: white;
+  display: block;
+  top: 46%;
+  left: 23%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  border-radius: 50%;
+}
+
+section.portfolio-section .galary .card .card-body {
+  margin: auto;
+}
+
+section.portfolio-section .galary .card .card-body p {
+  margin-top: 25px;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 1rem;
+  color: #333 !important;
+}
+
+section.portfolio-section .browse span {
+  margin-top: 10px;
+}
+
+section.portfolio-section .browse p {
+  margin-top: 25px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333 !important;
+  text-align: center;
+}
+
+section.my-blog {
+  background: url(../images/my-blog-background.png);
+  background-repeat: repeat;
+}
+
+section.my-blog .blog-img {
+  -webkit-box-shadow: 0px 1px 8px 5px #888 !important;
+          box-shadow: 0px 1px 8px 5px #888 !important;
+  border-radius: 10px;
+}
+
+section.my-blog .blog-img img {
+  height: 40vh;
+  border: 10px solid white;
+  border-radius: 5px;
+}
+
+section.my-blog .blog-content .blog-heading p {
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333 !important;
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+}
+
+section.my-blog .blog-content .blog-date ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 !important;
+}
+
+section.my-blog .blog-content .blog-date ul li {
+  list-style: none;
+}
+
+section.my-blog .blog-content .blog-date ul li p {
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: black;
+}
+
+section.my-blog .blog-content span {
+  display: inline-block;
+}
+
+section.my-blog .blog-content .blog-article p {
+  font-family: "Roboto Slab", serif !important;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  padding: 0;
+}
+
+section.my-blog .post span {
+  margin-top: 10px;
+}
+
+section.my-blog .post p {
+  margin-top: 25px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333 !important;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.contact {
+  background: url(../images/conact-background.png);
+  background-repeat: repeat;
+}
+
+section.contact .headlines {
+  color: #f6edd8 !important;
+}
+
+section.contact .headlines span {
+  background: #f6edd8 !important;
+}
+
+section.contact .contact-form {
+  font-family: "Roboto Slab", serif;
+}
+
+section.contact .contact-form .form-control {
+  margin: 10px 0px;
+  font-family: "Roboto Slab", serif;
+  border-radius: 5px;
+}
+
+section.contact .contact-form textarea {
+  width: 100%;
+  margin: 10px 0px;
+  font-family: "Roboto Slab", serif;
+  border-radius: 5px;
+}
+
+section.contact .contact-form .btn {
+  background: brown;
+  color: #f6edd8;
+  font-family: "Roboto Slab", serif;
+  border: 5px solid brown;
+  border-radius: 5px;
+}
+
+section.contact .social span {
+  background: #f6edd8 !important;
+  margin-top: 10px;
+}
+
+section.contact .social p {
+  margin-top: 25px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333 !important;
+  text-align: center;
+  color: #f6edd8 !important;
+}
+
+section.contact .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+section.contact .social-icons ul .fa-3x {
+  color: black;
+  background: #f5eee3;
+  margin: 2rem;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 15px;
+}
+/*# sourceMappingURL=style.css.map */

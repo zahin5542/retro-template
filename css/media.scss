@@ -1,0 +1,31 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  header {
+    nav {
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
+
+      .navbar-brand img,
+      .navbar-brand:hover img,
+      .navbar-brand:focus img {
+        position: absolute;
+        width: 35%;
+        top: 40%;
+        left: 15%;
+        transform: translate(-30%, -20%);
+        transition: all 0.4s ease-in-out;
+      }
+    }
+
+    .nav-link {
+      font-size: 15px !important;
+    }
+    button[collapse] {
+      &:focus {
+        .navbar-brand {
+          display: none;
+        }
+      }
+    }
+  }
+}

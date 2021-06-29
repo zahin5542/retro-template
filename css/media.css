@@ -1,0 +1,26 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  header nav {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  header nav .navbar-brand img,
+  header nav .navbar-brand:hover img,
+  header nav .navbar-brand:focus img {
+    position: absolute;
+    width: 35%;
+    top: 40%;
+    left: 15%;
+    -webkit-transform: translate(-30%, -20%);
+            transform: translate(-30%, -20%);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  header .nav-link {
+    font-size: 15px !important;
+  }
+  header button[collapse]:focus .navbar-brand {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media.css.map */

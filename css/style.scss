@@ -18,6 +18,7 @@
     padding: 10px;
     color: #3333337d !important;
   }
+  scroll-behavior: smooth;
 }
 li {
   text-decoration: none;
@@ -28,10 +29,9 @@ span {
 
 %logo {
   position: absolute;
-  width: 20%;
+  width: 15%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -15%);
   transform: translate(-50%, -40%);
   transition: all 0.2s ease-in-out;
 }
@@ -111,6 +111,19 @@ span {
   transform: translate(35%, -20%);
 }
 
+%navLink {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #f9ebd9;
+  margin: 0 10px;
+  text-shadow: 2px 2px 0px #3f3c3c;
+  &:hover,
+  &:focus {
+    color: #333;
+    text-shadow: 4px 4px 0px #5e5e5e;
+  }
+}
+
 header {
   background: url(../images/background.png);
   background-repeat: repeat;
@@ -120,8 +133,16 @@ header {
   }
 
   nav {
-    padding-top: 100px !important;
-    padding-bottom: 100px !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    .navbar-brand img {
+      @extend %logo;
+      &:hover {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+      }
+    }
     .toggle {
       width: 50px;
       padding: 0;
@@ -148,27 +169,17 @@ header {
       }
     }
 
-    .navbar-nav {
-      position: relative;
-      align-items: center;
-      justify-content: space-evenly;
-    }
-    .nav-link {
-      text-transform: uppercase;
-      font-size: 40px;
-      color: #f9ebd9;
-      &:hover,
-      &:focus {
-        color: #333;
+    .left-nav {
+      justify-content: flex-start;
+      .nav-link {
+        @extend %navLink;
       }
     }
 
-    .navbar-brand img {
-      @extend %logo;
-      &:hover {
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -40%);
+    .right-nav {
+      justify-content: flex-end;
+      .nav-link {
+        @extend %navLink;
       }
     }
   }
@@ -186,7 +197,8 @@ section {
     @extend %dotted-line;
   }
   .banner {
-    text-align: center;
+    width: 60%;
+    margin: auto;
   }
 
   .carousel {
@@ -311,12 +323,13 @@ section.portfolio-section {
       font-size: 15px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: flex-end;
       align-items: center;
       span {
         font-size: 20px;
         font-weight: 500;
         font-family: "Roboto Slab", serif;
+        margin: 0px 20px;
       }
       .bubble {
         box-shadow: 2px 2px 0px #565656;
@@ -325,7 +338,6 @@ section.portfolio-section {
         justify-content: center;
         align-items: center;
         font-family: "Roboto Slab", serif;
-        margin: 0px 20px;
         text-decoration: none;
         text-align: center;
         margin: auto;
@@ -333,7 +345,7 @@ section.portfolio-section {
         height: 40px;
         background: white;
         position: relative;
-        margin: 0px 10px;
+        margin: 10px 20px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         border-radius: 0px;
@@ -556,6 +568,8 @@ section.contact {
         width: 80px;
         height: 80px;
         text-align: center;
+        border: 5px solid #090707;
+        background-clip: content-box;
         border-radius: 50%;
         padding-top: 15px;
       }

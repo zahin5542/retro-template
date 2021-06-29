@@ -32,6 +32,13 @@ span {
   font-family: "Roboto Slab", serif;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 header nav .navbar-brand img {
   position: absolute;
   width: 15%;
@@ -175,7 +182,7 @@ header nav .toggle span {
   height: 2px;
   width: 100%;
   display: block;
-  background: #160f03;
+  background: #434548;
   margin: 10px 0px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
@@ -284,7 +291,12 @@ section .welcome {
 }
 
 section .welcome h1 {
-  color: #f7ebd8;
+  color: #ffffff;
+}
+
+section .welcome strong {
+  color: #bd4e3a;
+  font-size: 35px;
 }
 
 section.about-section {

@@ -345,6 +345,10 @@ section.portfolio-section .container .tag {
           align-items: center;
 }
 
+section.portfolio-section .container .tag:hover .bubble::before {
+  display: none;
+}
+
 section.portfolio-section .container .tag span {
   font-size: 20px;
   font-weight: 500;
@@ -376,6 +380,8 @@ section.portfolio-section .container .tag .bubble {
   position: relative;
   margin: 10px 20px;
   border-radius: 0px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 section.portfolio-section .container .tag .bubble::before {
@@ -388,12 +394,7 @@ section.portfolio-section .container .tag .bubble::before {
   border-bottom: 20px solid transparent;
 }
 
-section.portfolio-section .container .tag .bubble:hover ::before {
-  content: "";
-  display: none;
-}
-
-section.portfolio-section .container .tag .bubble a {
+section.portfolio-section .container .tag a {
   text-decoration: none;
   color: #333 !important;
   font-family: "Roboto Slab", serif;

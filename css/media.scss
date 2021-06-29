@@ -4,6 +4,13 @@
     nav {
       padding-top: 30px !important;
       padding-bottom: 30px !important;
+      .menu {
+        text-align: right;
+        .row {
+          flex-direction: column !important;
+          align-items: flex-end !important;
+        }
+      }
 
       .navbar-brand img,
       .navbar-brand:hover img,
@@ -14,11 +21,13 @@
         left: 15%;
         transform: translate(-30%, -20%);
         transition: all 0.4s ease-in-out;
+        z-index: 4;
       }
     }
 
     .nav-link {
       font-size: 15px !important;
+      z-index: 5;
     }
     button[collapse] {
       &:focus {

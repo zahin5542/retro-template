@@ -586,4 +586,14 @@ section.contact {
       }
     }
   }
+
+  .copyRight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    strong {
+      font-family: "Roboto Slab", serif !important;
+    }
+  }
 }

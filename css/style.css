@@ -625,4 +625,22 @@ section.contact .social-icons ul .fa-3x {
   border-radius: 50%;
   padding-top: 15px;
 }
+
+section.contact .copyRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contact .copyRight strong {
+  font-family: "Roboto Slab", serif !important;
+}
 /*# sourceMappingURL=style.css.map */

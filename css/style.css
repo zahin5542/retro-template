@@ -643,4 +643,14 @@ section.contact .copyRight {
 section.contact .copyRight strong {
   font-family: "Roboto Slab", serif !important;
 }
+
+section.contact .copyRight strong a {
+  text-decoration: none;
+  color: #f5eee3;
+}
+
+section.contact .copyRight strong a:hover {
+  color: #e48787;
+  text-shadow: 1px 1px 0px #ffffff, 1px 1px 0px #5e5e5e;
+}
 /*# sourceMappingURL=style.css.map */

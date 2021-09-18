@@ -594,6 +594,14 @@ section.contact {
     align-items: center;
     strong {
       font-family: "Roboto Slab", serif !important;
+      a {
+        text-decoration: none;
+        color: #f5eee3;
+        &:hover {
+          color: #e48787;
+          text-shadow: 1px 1px 0px #ffffff, 1px 1px 0px #5e5e5e;
+        }
+      }
     }
   }
 }
